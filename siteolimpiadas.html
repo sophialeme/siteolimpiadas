@@ -22,8 +22,8 @@
             align-items: normal;
         }
         #tamanho{
-            width: 270px;
-            height: 270px;
+            width: 100px;
+            height: 100px;
         }
         #tabela{
             width: 300px;
@@ -88,6 +88,24 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+        .imagem img{
+            width: 200px;
+        }
+        .imagem{
+            display: flex;
+        }
+        .img{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .viewmore{
+            background-color: azure;
+            border-radius: 10px;
+            width: px;
+            height: px;
+        }
 </style>
 </head>
 <body>
@@ -95,7 +113,7 @@
         <img id="tamanho" src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg">
     </div>
     <div id="BottomBox">
-        <table style="border: 2px solid black; border-radius: 10px;" id="tabela">
+        <table style="border: 1px solid black;" id="tabela">
             <tr>
             <td></td>
             <td></td>
@@ -138,5 +156,16 @@
         </tr>
         </table> 
     </div>
+    <section class="img">
+        <div>
+            <div class="imagem">
+                <img src="">
+            </div>
+            <div>
+                <h5>titulo</h5>
+                <p>descrição</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
