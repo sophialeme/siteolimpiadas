@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+     body{
+        background-color:rgb(168, 185, 221);
+     }
      #TopBox {
-            border: 5px solid rgb(255, 255, 255);
+            border: 5px solid rgb(168, 185, 221);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
         }
         #BottomBox {
-            border: 5px solid rgb(255, 255, 255);
+            border: 5px solid rgb(168, 185, 221);
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -22,9 +25,12 @@
             width: 270px;
             height: 270px;
         }
-        .Tabela{
-            width: 100px;
-            height: 100px;
+        #tabela{
+            width: 300px;
+            height: 250px;
+            flex-direction: row;
+            justify-content: center;
+            align-items: normal;
         }
         #circle {
             width: 40px;
@@ -71,7 +77,7 @@
         #bandeira3 {
             width: 40px;
             height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=15497&format=png&color=000000);
+            background: url(https://img.icons8.com/?size=100&id=22557&format=png&color=000000);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -86,11 +92,11 @@
 </head>
 <body>
     <div id="TopBox">
-        <img id="tamanho" src="https://i.pinimg.com/564x/fb/58/7e/fb587efdaf18fdef450897f03668ad51.jpg">
+        <img id="tamanho" src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg">
     </div>
     <div id="BottomBox">
-        <table border="solid">
-            <tr  class="Tabela">
+        <table style="border: 2px solid black; border-radius: 10px;" id="tabela">
+            <tr>
             <td></td>
             <td></td>
             <td id="circle"></td>
@@ -98,37 +104,37 @@
             <td id="circle3"></td>
             <td id="circle4"></td>
         </tr>
-        <tr  class="Tabela">
+        <tr>
             <td>1°</td>
-            <td id="bandeira1"></td>
-            <td>22</td>
-            <td>19</td>
-            <td>14</td>
-            <td>55</td>
-        </tr>
-        <tr  class="Tabela">
-            <td>2°</td>
             <td id="bandeira2"></td>
-            <td>21</td>
-            <td>30</td>
-            <td>28</td>
-            <td>79</td>
+            <td>27</td>
+            <td>35</td>
+            <td>33</td>
+            <td>95</td>
         </tr>
-        <tr  class="Tabela">
+        <tr>
+            <td>2°</td>
+            <td id="bandeira1"></td>
+            <td>26</td>
+            <td>24</td>
+            <td>17</td>
+            <td>67</td>
+        </tr>
+        <tr>
             <td>3°</td>
             <td id="bandeira3"></td>
-            <td>13</td>
-            <td>16</td>
-            <td>19</td>
-            <td>48</td>
+            <td>18</td>
+            <td>14</td>
+            <td>11</td>
+            <td>51</td>
         </tr>
-        <tr  class="Tabela">
-            <td>17°</td>
+        <tr>
+            <td>18°</td>
             <td id="bandeira4"></td>
             <td>2</td>
             <td>5</td>
-            <td>6</td>
-            <td>13</td>
+            <td>7</td>
+            <td>14</td>
         </tr>
         </table> 
     </div>
