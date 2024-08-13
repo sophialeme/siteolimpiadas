@@ -23,9 +23,9 @@
         #BottomBox {
             border: 5px solid rgb(206, 221, 255);
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
-            align-items: normal;
+            align-items: center;
         }
         #tamanho{
             width: 150px;
@@ -38,6 +38,7 @@
             height: 200px;
             border-collapse: collapse;
             background-color: #ffffff;
+            margin: 5px 0;
         }
         th, td {
             border: 1px solid #dddddd;
@@ -53,10 +54,42 @@
         tr:hover {
             background-color: #e0e0e0;
         }
-        img {
+        .img {
             max-width: 30px; 
             height: auto;
         }
+        .newsSection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        .newsDiv {
+            display: flex;
+            width: 700px;
+        }
+        .newsDiv img {
+            width: 47%;
+        }
+        .newsDiv h5 {
+            font-size: 20px;
+        }
+        .newsDiv p {
+            font-size: 15px;
+            color: gray;
+        }
+        a {
+            text-decoration: none;
+        }
+       .buttonViewMore {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(241, 241, 241);
+            border-radius: 10px;
+            width: 80px;
+            height: 20px;
+         }       
 </style>
 </head>
 <body>
@@ -69,16 +102,16 @@
                 <tr>
                     <th></th>
                     <th></th>
-                    <th><img src="https://img.icons8.com/?size=100&id=X6CJMckcVrBj&format=png&color=000000"></th>
-                    <th><img src="https://img.icons8.com/?size=100&id=dgAxfaiZaNr6&format=png&color=000000"></th>
-                    <th><img src="https://img.icons8.com/?size=100&id=lMwvkoCmvpSJ&format=png&color=000000"></th>
-                    <th><img src="https://img.icons8.com/?size=100&id=EZfzIaYZlmEl&format=png&color=000000"></th>
+                    <th><img class="img" src="https://img.icons8.com/?size=100&id=X6CJMckcVrBj&format=png&color=000000"></th>
+                    <th><img class="img" src="https://img.icons8.com/?size=100&id=dgAxfaiZaNr6&format=png&color=000000"></th>
+                    <th><img class="img" src="https://img.icons8.com/?size=100&id=lMwvkoCmvpSJ&format=png&color=000000"></th>
+                    <th><img class="img" src="https://img.icons8.com/?size=100&id=EZfzIaYZlmEl&format=png&color=000000"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1º</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=15532&format=png&color=000000">Estados Unidos da América</td>
+                    <td><img class="img" src="https://img.icons8.com/?size=100&id=15532&format=png&color=000000">Estados Unidos da América</td>
                     <td>40</td>
                     <td>44</td>
                     <td>42</td>
@@ -86,7 +119,7 @@
                 </tr>
                 <tr>
                     <td>2º</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=17962&format=png&color=000000">República Popular da China</td>
+                    <td><img class="img" src="https://img.icons8.com/?size=100&id=17962&format=png&color=000000">República Popular da China</td>
                     <td>40</td>
                     <td>27</td>
                     <td>24</td>
@@ -94,7 +127,7 @@
                 </tr>
                 <tr>
                     <td>3º</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=22435&format=png&color=000000">Japão</td>
+                    <td><img class="img" src="https://img.icons8.com/?size=100&id=22435&format=png&color=000000">Japão</td>
                     <td>20</td>
                     <td>12</td>
                     <td>13</td>
@@ -102,7 +135,7 @@
                 </tr>
                 <tr>
                     <td>20º</td>
-                    <td><img src="https://img.icons8.com/?size=100&id=15509&format=png&color=000000">Brasil</td>
+                    <td><img class="img" src="https://img.icons8.com/?size=100&id=15509&format=png&color=000000">Brasil</td>
                     <td>3</td>
                     <td>7</td>
                     <td>10</td>
@@ -110,6 +143,27 @@
                 </tr>
             </tbody>
         </table>
+            <a href="https://olympics.com/pt/paris-2024/medalhas" target="_balnk">
+                <div class="buttonViewMore">
+                  <p>Ver mais</p> 
+                </div>
+            </a>
+       <section class="newsSection">
+            <div>
+                <div class="newsDiv">
+                    <img src="https://livesport-ott-images.ssl.cdn.cra.cz/r900xfq60/6879e11c-e962-4794-8663-8a07672c66da.jpeg"/>
+                    <div>
+                        <h5>OH Ye Jin Brilha na Final de Pistola de Ar 10m Feminino nas Olimpíadas de Paris</h5>
+                        <p>No dia 28 de julho, o Centro de Tiro Esportivo de Chateauroux foi palco de uma emocionante final de pistola de ar 10m feminino nas Olimpíadas de Paris 2024. A competição foi marcada por momentos de alta tensão e precisão, com as atletas mostrando todo o seu talento e determinação.</p>
+                       <a href="file:///C:/Users/Estudante/Desktop/noticiatiroesportivo.html" target="_balnk">
+                            <div class="buttonViewMore">
+                                <p>Ver mais</p> 
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
