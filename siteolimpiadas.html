@@ -3,169 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações sobre as olimpiadas 2024</title>
 <style>
      body{
-        background-color:rgb(168, 185, 221);
+        background-color:rgb(206, 221, 255);
      }
      #TopBox {
-            border: 5px solid rgb(168, 185, 221);
+            height: 450px;
+            border: 5px solid rgb(206, 221, 255);
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            background: url(https://wallpaper.forfun.com/fetch/c5/c5281a121f3a759b360df93b7397953c.jpeg);
+            background-position: 0% 20%;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         #BottomBox {
-            border: 5px solid rgb(168, 185, 221);
+            border: 5px solid rgb(206, 221, 255);
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: normal;
         }
         #tamanho{
-            width: 100px;
-            height: 100px;
-        }
-        #tabela{
-            width: 300px;
-            height: 250px;
-            flex-direction: row;
-            justify-content: center;
-            align-items: normal;
-        }
-        #circle {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=X6CJMckcVrBj&format=png&color=000000);
-            background-size: cover;
+            width: 150px;
+            height: 150px;
+            background: url(https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg);
             background-repeat: no-repeat;
         }
-        #circle2 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=dgAxfaiZaNr6&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
+        table {
+            width: 600px;
+            height: 200px;
+            border-collapse: collapse;
+            background-color: #ffffff;
         }
-        #circle3 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=lMwvkoCmvpSJ&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
         }
-        #circle4 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=EZfzIaYZlmEl&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
+        th {
+            background-color: #e6e6e6;
         }
-        #bandeira1 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=17962&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
-        #bandeira2 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=15532&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
+        tr:hover {
+            background-color: #e0e0e0;
         }
-        #bandeira3 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=22557&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        #bandeira4 {
-            width: 40px;
-            height: 40px;
-            background: url(https://img.icons8.com/?size=100&id=15509&format=png&color=000000);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .imagem img{
-            width: 200px;
-        }
-        .imagem{
-            display: flex;
-        }
-        .img{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .viewmore{
-            background-color: azure;
-            border-radius: 10px;
-            width: px;
-            height: px;
+        img {
+            max-width: 30px; 
+            height: auto;
         }
 </style>
 </head>
 <body>
     <div id="TopBox">
-        <img id="tamanho" src="https://olympics.com/_pr/topic-assets/paris-2024/emblem-oly.svg">
+        <div id="tamanho"></div>
     </div>
     <div id="BottomBox">
-        <table style="border: 1px solid black;" id="tabela">
-            <tr>
-            <td></td>
-            <td></td>
-            <td id="circle"></td>
-            <td id="circle2"></td>
-            <td id="circle3"></td>
-            <td id="circle4"></td>
-        </tr>
-        <tr>
-            <td>1°</td>
-            <td id="bandeira2"></td>
-            <td>27</td>
-            <td>35</td>
-            <td>33</td>
-            <td>95</td>
-        </tr>
-        <tr>
-            <td>2°</td>
-            <td id="bandeira1"></td>
-            <td>26</td>
-            <td>24</td>
-            <td>17</td>
-            <td>67</td>
-        </tr>
-        <tr>
-            <td>3°</td>
-            <td id="bandeira3"></td>
-            <td>18</td>
-            <td>14</td>
-            <td>11</td>
-            <td>51</td>
-        </tr>
-        <tr>
-            <td>18°</td>
-            <td id="bandeira4"></td>
-            <td>2</td>
-            <td>5</td>
-            <td>7</td>
-            <td>14</td>
-        </tr>
-        </table> 
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th><img src="https://img.icons8.com/?size=100&id=X6CJMckcVrBj&format=png&color=000000"></th>
+                    <th><img src="https://img.icons8.com/?size=100&id=dgAxfaiZaNr6&format=png&color=000000"></th>
+                    <th><img src="https://img.icons8.com/?size=100&id=lMwvkoCmvpSJ&format=png&color=000000"></th>
+                    <th><img src="https://img.icons8.com/?size=100&id=EZfzIaYZlmEl&format=png&color=000000"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1º</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=15532&format=png&color=000000">Estados Unidos da América</td>
+                    <td>40</td>
+                    <td>44</td>
+                    <td>42</td>
+                    <td>126</td>
+                </tr>
+                <tr>
+                    <td>2º</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=17962&format=png&color=000000">República Popular da China</td>
+                    <td>40</td>
+                    <td>27</td>
+                    <td>24</td>
+                    <td>91</td>
+                </tr>
+                <tr>
+                    <td>3º</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=22435&format=png&color=000000">Japão</td>
+                    <td>20</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>20º</td>
+                    <td><img src="https://img.icons8.com/?size=100&id=15509&format=png&color=000000">Brasil</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>10</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
-    <section class="img">
-        <div>
-            <div class="imagem">
-                <img src="">
-            </div>
-            <div>
-                <h5>titulo</h5>
-                <p>descrição</p>
-            </div>
-        </div>
-    </section>
 </body>
 </html>
